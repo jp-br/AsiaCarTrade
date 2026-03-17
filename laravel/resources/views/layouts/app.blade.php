@@ -70,7 +70,7 @@
         <ul class="list-unstyled mb-0 ">
           <li class="mb-3 d-flex align-items-center justify-content-center justify-content-md-start">
             <i class="fab fa-facebook fs-4 text-danger me-3" style="width: 35px; text-align: center;"></i>
-            <a href="#!" class="text-white text-decoration-none contact-link">AsiaCar Trade INC.</a>
+            <a href="https://www.facebook.com/share/1863wcpDbk/?mibextid=wwXIfr" class="text-white text-decoration-none contact-link">AsiaCar Trade INC.</a>
           </li>
 
           <li class="mb-3 d-flex align-items-center justify-content-center justify-content-md-start">
@@ -80,7 +80,7 @@
 
           <li class="mb-3 d-flex align-items-center justify-content-center justify-content-md-start">
             <i class="fab fa-tiktok fs-4 text-danger me-3" style="width: 35px; text-align: center;"></i>
-            <a href="#!" class="text-white text-decoration-none contact-link">AsiaCar Trade INC.</a>
+            <a href="https://www.tiktok.com/@asiacarstrade" class="text-white text-decoration-none contact-link">AsiaCar Trade INC.</a>
           </li>
 
           <li class="d-flex align-items-center justify-content-center justify-content-md-start">
