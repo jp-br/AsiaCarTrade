@@ -5,6 +5,7 @@
     <div class="Container mt-5">
         <h1>MANOK</h1>
         <h1>kalabaw</h1>
+        <h1>kalabaw1</h1>\
         <h1>kalabaw1</h1>
 
     </div>
