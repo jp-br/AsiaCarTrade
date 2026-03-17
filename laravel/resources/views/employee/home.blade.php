@@ -1,6 +1,7 @@
 @extends('layouts.app')
 @section('content')
 <div class="container mt-4">
+    <h1> Hello Tite</h1>
 <h1>Employee List</h1>
     <p>This is where your table or employee data will go.</p>
     
