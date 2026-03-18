@@ -9,7 +9,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
       <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
       <link href="https://fonts.googleapis.com/..." rel="stylesheet">
-      @vite('resources/css/app.css')
+
   </head>
   <body class="d-flex flex-column h-100">
       <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar" id="mainNavbar">
