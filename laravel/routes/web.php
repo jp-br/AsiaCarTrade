@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EmployeeController;
 
-Route::get('/home', [EmployeeController::class, 'home'])->name('my_home');
+Route::get('/', [EmployeeController::class, 'home'])->name('my_home');
 Route::get('/about', [EmployeeController::class, 'about'])->name('about_us');
 Route::get('/store', [EmployeeController::class, 'store'])->name('my_store');
 Route::get('/services', [EmployeeController::class, 'services'])->name('my_services');
