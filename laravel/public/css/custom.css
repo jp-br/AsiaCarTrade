@@ -100,6 +100,7 @@
     border-top: 3px solid #dc3545 !important;
     border-radius: 0 0 8px 8px;
 }
+<<<<<<< HEAD
 .btn-apply {
     background-color: #d10000; /* A deep, rich racing red */
     color: #ffffff;            /* Pure white text */
@@ -115,4 +116,25 @@
     color: #ffffff;            /* Keeps the text white */
     transform: translateY(-2px); /* Makes the button "lift" up slightly */
     box-shadow: 0px 4px 10px rgba(209, 0, 0, 0.4); /* Adds a red glowing shadow */
+=======
+
+.vehicle-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.vehicle-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+}
+
+.vehicle-card img {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.vehicle-card:hover img {
+    transform: scale(1.1);
+>>>>>>> main
 }
