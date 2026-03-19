@@ -12,46 +12,51 @@
 
   </head>
   <body class="d-flex flex-column h-100">
-      <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar" id="mainNavbar">
-        <div class="container">
-          <a class="navbar-brand" href="{{ route('my_home') }}">
-           <img src="{{ asset('images/Asiacar_Logo.png') }}" class="navbar_logo" alt="AsiaCarTrade"></a>
-      
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-          </button>
-      
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto text-uppercase fw-bold">
-          <li class="nav-item">
-            <a class="nav-link {{ request()->routeIs('my_home') ? 'active' : '' }}" href="{{ route('my_home') }}">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link {{ request()->routeIs('about_us') ? 'active' : '' }}" href="{{ route('about_us') }}">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link {{ request()->routeIs('my_store') ? 'active' : '' }}" href="{{ route('my_store') }}">Store</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link {{ request()->routeIs('my_services.*') ? 'active' : '' }}" href="{{ route('my_services') }}" id="servicesDropdown">Services</a>
-              <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-                <li><a class="dropdown-item nav-link {{ request()->routeIs('my_trade') ? 'active' : '' }}" href="{{ route('my_trade') }}">Trade</a></li>
-                <li><a class="dropdown-item nav-link {{ request()->routeIs('my_bid') ? 'active' : '' }}" href="{{ route('my_bid') }}">Bid</a></li>
-              </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link {{ request()->routeIs('my_blog') ? 'active' : '' }}" href="{{ route('my_blog') }}">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link {{ request()->routeIs('my_careers') ? 'active' : '' }}" href="{{ route('my_careers') }}">Careers</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link {{ request()->routeIs('contact_us') ? 'active' : '' }}" href="{{ route('contact_us') }}">Contact Us</a>
-          </li>
-        </ul>
-      </div>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar shadow-sm" id="mainNavbar">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="{{ route('my_home') }}">
+      <img src="{{ asset('images/Asiacar_Logo.png') }}" class="navbar_logo me-2" alt="AsiaCarTrade" style="height: 50px; width: auto;">
+    </a>
+
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-center">
+        <li class="nav-item mx-lg-2">
+          <a class="nav-link {{ request()->routeIs('my_home') ? 'active text-danger' : '' }}" href="{{ route('my_home') }}">Home</a>
+        </li>
+        <li class="nav-item mx-lg-2">
+          <a class="nav-link {{ request()->routeIs('about_us') ? 'active text-danger' : '' }}" href="{{ route('about_us') }}">About Us</a>
+        </li>
+        <li class="nav-item mx-lg-2">
+          <a class="nav-link {{ request()->routeIs('my_store') ? 'active text-danger' : '' }}" href="{{ route('my_store') }}">Store</a>
+        </li>
+
+        <li class="nav-item dropdown mx-lg-2">
+          <a class="nav-link dropdown-toggle {{ request()->routeIs('my_services.*') ? 'active' : '' }}" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark border-0 shadow" aria-labelledby="servicesDropdown">
+            <li><a class="dropdown-item py-2" href="{{ route('my_trade') }}"><i class="fas fa-exchange-alt me-2 text-danger"></i> Trade</a></li>
+            <li><a class="dropdown-item py-2" href="{{ route('my_bid') }}"><i class="fas fa-gavel me-2 text-danger"></i> Bid</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item mx-lg-2">
+          <a class="nav-link {{ request()->routeIs('my_blog') ? 'active text-danger' : '' }}" href="{{ route('my_blog') }}">Blog</a>
+        </li>
+
+        <li class="nav-item ms-lg-3">
+          <a class="btn btn-danger rounded-pill px-4 fw-bold shadow-sm" href="{{ route('contact_us') }}">
+            Contact Us
+          </a>
+        </li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
 
       <div class="main">
           @yield('content')
