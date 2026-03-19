@@ -14,9 +14,9 @@
                             background-repeat: no-repeat;
                             height: 100vh;
                             width: 100vw;">
-                    <div class="d-flex flex-column justify-content-center align-items-start h-100 text-start p-5">     
+                    <div class="container-sm h-100 justify-center ">     
                         <div class="d-flex flex-column h-100 text-center">
-                            <h2 class="display-4 fw-bold text-white">
+                            <h2 class="display-4 fw-bold text-white">   
                                 Become an Official AsiaCars Agent
                             </h2>
                             <h2 class="display-6 fw-bold text-danger">
