@@ -34,7 +34,7 @@
         </li>
 
         <li class="nav-item dropdown mx-lg-2">
-          <a class="nav-link dropdown-toggle {{ request()->routeIs('my_services.*') ? 'active' : '' }}" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle {{ request()->routeIs('my_services.*') ? 'active' : '' }}" href="{{ route('my_services') }}" id="servicesDropdown">
             Services
           </a>
           <ul class="dropdown-menu dropdown-menu-dark border-0 shadow" aria-labelledby="servicesDropdown">
