@@ -100,3 +100,23 @@
     border-top: 3px solid #dc3545 !important;
     border-radius: 0 0 8px 8px;
 }
+
+.vehicle-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.vehicle-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+}
+
+.vehicle-card img {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.vehicle-card:hover img {
+    transform: scale(1.1);
+}
