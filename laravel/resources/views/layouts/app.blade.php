@@ -46,6 +46,9 @@
         <li class="nav-item mx-lg-2">
           <a class="nav-link {{ request()->routeIs('my_blog') ? 'active text-danger' : '' }}" href="{{ route('my_blog') }}">Blog</a>
         </li>
+        <li class="nav-item mx-lg-2">
+          <a class="nav-link {{ request()->routeIs('my_careers') ? 'active text-danger' : '' }}" href="{{ route('my_careers') }}">Careers</a>
+        </li>
 
         <li class="nav-item ms-lg-3">
           <a class="btn btn-danger rounded-pill px-4 fw-bold shadow-sm" href="{{ route('contact_us') }}">
