@@ -53,3 +53,50 @@
         margin-top: 0; /* Prevents a gap so the mouse doesn't "fall off" */
     }
 }
+
+/* Glassmorphism Effect */
+.custom-navbar {
+    background: rgba(0, 0, 0, 0.85); /* Semi-transparent black */
+    backdrop-filter: blur(10px);    /* Blurs content behind for a modern look */
+    transition: all 0.3s ease;
+    padding: 15px 0;
+}
+
+/* Nav Link Styling */
+.navbar-nav .nav-link {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #dc3545 !important; /* Bootstrap Danger Red */
+}
+
+/* Underline animation on hover */
+.navbar-nav .nav-link {
+    position: relative;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #dc3545;
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+/* Dropdown styling */
+.dropdown-menu {
+    border-top: 3px solid #dc3545 !important;
+    border-radius: 0 0 8px 8px;
+}
